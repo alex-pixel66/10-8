@@ -1,30 +1,137 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>待作業空白頁</title>
-  <style>
-    * { box-sizing: border-box; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>城市散步</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>城市散步</h1>
+      <nav>
+        <a href="#event">活動資訊</a>
+        <a href="#signup">立即報名</a>
+      </nav>
+    </header>
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, "Microsoft JhengHei", sans-serif;
-      background: #f5f7fa;
-      color: #17324d;
-    }
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">週末城市探索</p>
+          <h2>城市裡的故事，從一段步行開始</h2>
+          <p>
+            和同好一起穿梭巷弄、老屋與街角咖啡，用慢步的節奏看見城市最真實的一面。
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#signup">立即報名</a>
+            <a class="secondary" href="#event">查看活動</a>
+          </div>
+          <ul class="meta">
+            <li>每週六 09:00</li>
+            <li>適合 12+</li>
+            <li>台北市中心</li>
+          </ul>
+        </div>
 
-    .blank-page {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-  </style>
-</head>
-<body>
-  <div class="blank-page"></div>
-</body>
+        <div class="hero-card">
+          <div class="mini-card">
+            <span>活動日期</span>
+            <strong>2026/10/17</strong>
+          </div>
+          <div class="mini-card">
+            <span>集合地點</span>
+            <strong>中山站</strong>
+          </div>
+          <div class="mini-card accent">
+            <span>報名費用</span>
+            <strong>NT$ 350</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="event" class="info-section">
+        <div class="section-heading">
+          <p class="eyebrow">活動資訊</p>
+          <h3>這次散步帶你走進城市的細節</h3>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card">
+            <h4>路線主題</h4>
+            <p>從早晨的巷口市場到午後的老街角，一步步感受城市的節奏與歷史。</p>
+          </article>
+          <article class="event-card">
+            <h4>人數限制</h4>
+            <p>每梯次最多 20 人，保留空間與導覽品質，讓每位參與者都能輕鬆互動。</p>
+          </article>
+          <article class="event-card">
+            <h4>適合對象</h4>
+            <p>適合熱愛散步、攝影、城市觀察與社群交流的朋友，一起共度一段慢而有趣的時光。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="timeline-section">
+        <div class="section-heading">
+          <p class="eyebrow">行程安排</p>
+          <h3>簡單輕鬆的城市漫遊</h3>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="time">09:00</span>
+            <div>
+              <h4>集合與暖身</h4>
+              <p>在車站前會合，簡單自我介紹與路線說明。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="time">09:30</span>
+            <div>
+              <h4>老街散步</h4>
+              <p>沿著街景與歷史建築慢慢前進，細聽每個轉角的故事。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="time">11:00</span>
+            <div>
+              <h4>休息與交流</h4>
+              <p>在咖啡店停留片刻，交換照片與城市觀察。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="signup" class="signup-section">
+        <div class="section-heading">
+          <p class="eyebrow">立即報名</p>
+          <h3>預約你的城市散步</h3>
+        </div>
+
+        <form class="signup-form">
+          <label>
+            姓名
+            <input type="text" placeholder="請輸入姓名" />
+          </label>
+          <label>
+            電子郵件
+            <input type="email" placeholder="請輸入 email" />
+          </label>
+          <label>
+            參加人數
+            <select>
+              <option>1 位</option>
+              <option>2 位</option>
+              <option>3 位</option>
+              <option>4 位</option>
+            </select>
+          </label>
+          <button type="submit">送出報名</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2026 城市散步</footer>
+  </body>
 </html>
